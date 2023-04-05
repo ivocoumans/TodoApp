@@ -11,6 +11,7 @@
 		17CBD6B029DD673C002CDAEC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CBD6AF29DD673C002CDAEC /* ContentView.swift */; };
 		17CBD6B229DD673D002CDAEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17CBD6B129DD673D002CDAEC /* Assets.xcassets */; };
 		17CBD6B629DD673D002CDAEC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17CBD6B529DD673D002CDAEC /* Preview Assets.xcassets */; };
+		17CBD6BD29DD6AEC002CDAEC /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CBD6BC29DD6AEC002CDAEC /* DataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		17CBD6B129DD673D002CDAEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17CBD6B329DD673D002CDAEC /* TodoApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TodoApp.entitlements; sourceTree = "<group>"; };
 		17CBD6B529DD673D002CDAEC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		17CBD6BC29DD6AEC002CDAEC /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				17CBD6B129DD673D002CDAEC /* Assets.xcassets */,
 				17CBD6B329DD673D002CDAEC /* TodoApp.entitlements */,
 				17CBD6B429DD673D002CDAEC /* Preview Content */,
+				17CBD6BC29DD6AEC002CDAEC /* DataStore.swift */,
 			);
 			path = TodoApp;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17CBD6B029DD673C002CDAEC /* ContentView.swift in Sources */,
+				17CBD6BD29DD6AEC002CDAEC /* DataStore.swift in Sources */,
 				17CBD6AE29DD673C002CDAEC /* TodoAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,7 +291,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ivocoumans.TodoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -325,7 +331,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ivocoumans.TodoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
